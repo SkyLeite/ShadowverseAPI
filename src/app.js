@@ -50,7 +50,7 @@ app.get('/cards', async (req, res) => {
 });
 
 app.get('/cards/:id', async (req, res) => {
-    res.send(await db.all(`SELECT * FROM cards WHERE card_name = '${req.params.id}'`));
+    res.send(await db.all(`SELECT * FROM cards WHERE card_name LIKE '%${req.params.id}%'`));
 });
 
 app.listen(3000, async () => {
