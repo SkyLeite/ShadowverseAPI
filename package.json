@@ -1,0 +1,33 @@
+{
+  "name": "shadowverse-api",
+  "version": "1.0.0",
+  "description": "Real API for Shadowverse",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd src && nodemon app.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazeSenoue/ShadowverseAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KazeSenoue/ShadowverseAPI/issues"
+  },
+  "homepage": "https://github.com/KazeSenoue/ShadowverseAPI#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jsesc": "^2.5.1",
+    "mz": "^2.6.0",
+    "node-fetch": "^1.7.1",
+    "sqlite": "^2.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "nodemon": "^1.11.0"
+  }
+}
